@@ -44,8 +44,8 @@ class MyApp extends StatelessWidget {
         ),
 
         //single child pour scroller la colonne
-        body: SingleChildScrollView(
-          child: const Column(children: [
+        body: const SingleChildScrollView(
+          child: Column(children: [
             StoryWidget(),
             PostWidget(),
           ]),
