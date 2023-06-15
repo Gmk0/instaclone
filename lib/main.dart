@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:instaclone/widget/postWidget.dart';
+import 'package:instaclone/widget/storyWidget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -43,15 +45,9 @@ class MyApp extends StatelessWidget {
 
         //single child pour scroller la colonne
         body: SingleChildScrollView(
-          child: Column(children: [
-            Container(
-              height: 100,
-              color: Colors.blue,
-            ),
-            Container(
-              height: 1000,
-              color: Colors.red,
-            ),
+          child: const Column(children: [
+            StoryWidget(),
+            PostWidget(),
           ]),
         ),
         bottomNavigationBar: BottomNavigationBar(
